@@ -1,9 +1,9 @@
-import json 
+import json
 
-open_users = open(users.json) 
-data = json.load(open_users) 
+open_users = open("users.json")
+data = json.load(open_users)
 
-for name in data ['first_name']: 
-    print(name) 
+for name in data:
+    print(name["first_name"])
 
-open_users.close()  
+open_users.close()

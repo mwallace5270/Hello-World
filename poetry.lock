@@ -1731,6 +1731,20 @@ parallel = ["dask[complete]"]
 viz = ["matplotlib", "nc-time-axis", "seaborn"]
 
 [[package]]
+name = "xarray-datatree"
+version = "0.0.12"
+description = "Hierarchical tree-like data structures for xarray"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "xarray-datatree-0.0.12.tar.gz", hash = "sha256:6fc2d80fbdf691f449236578a3844d6b7253fdb62d507ba3a813b8144eba5f9c"},
+    {file = "xarray_datatree-0.0.12-py3-none-any.whl", hash = "sha256:6fef5356c7cca453308484e3a3fd9fab597542289dfcbf8b6b7e0262dfc4240d"},
+]
+
+[package.dependencies]
+xarray = ">=2022.6.0"
+
+[[package]]
 name = "xyzservices"
 version = "2023.5.0"
 description = "Source of XYZ tiles providers"
@@ -1759,4 +1773,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "4bd2d01b3f4b536f8be86b603c922ffb412561dbf16c5920e3a5ff8f471368a3"
+content-hash = "0e5104ac564d418a343f12b9498ae3f9e34409855989ed9821355eff70fd9dde"

@@ -1,0 +1,11 @@
+name: hello_world
+channels:
+  - conda-forge
+dependencies:
+  - cartopy
+  - xarray
+  - netcdf4
+  - ipykernel
+  - hvplot 
+  - rioxarray 
+  - geoviews

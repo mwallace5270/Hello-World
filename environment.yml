@@ -9,3 +9,5 @@ dependencies:
   - hvplot 
   - rioxarray 
   - geoviews
+  - numpy
+

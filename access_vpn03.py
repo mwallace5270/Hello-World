@@ -1,6 +1,5 @@
 from pathlib import Path
 import xarray
-#import datatree 
 import cartopy.crs as ccrs
 import cartopy  
 import matplotlib.pyplot as plt 
@@ -37,4 +36,14 @@ def read_vnp03(filename03):
     senazi_long = senazi_ds.attrs['long_name']
     senzen_long = senzen_ds.attrs['long_name']
     solazi_long = solazi_ds.attrs['long_name']
-    solzen_long = solzen_ds.attrs['long_name']    
+    solzen_long = solzen_ds.attrs['long_name']     
+
+
+def map_vnp03(variable_ds03, variable03_long, lon_ds, lat_ds): 
+    ax = plt.axes(projection = ccrs.PlateCarree())
+    pc = ax.pcolormesh(lon_ds, lat_ds, variable03_ds) 
+    # Pass the longname as the title
+    ax.set_title(variable03_long)
+    # Colorbar and lables  
+    cb = plt.colorbar(pc, shrink=0.5)  
+    plt.show()

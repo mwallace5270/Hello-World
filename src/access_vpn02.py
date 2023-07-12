@@ -61,5 +61,5 @@ def map_vnp02(variable02_ds, lon_ds, lat_ds):
     ax.coastlines() 
     # Colorbar and lables  
     cb = plt.colorbar(pc, shrink=0.5) 
-    pc.set_cmap('jet') # colors: viridis, plasma, cubehelix, jet
+    pc.set_cmap('jet') # colors: https://matplotlib.org/stable/tutorials/colors/colormaps.html
     plt.show()

@@ -46,4 +46,5 @@ def map_vnp03(variable_ds03, variable03_long, lon_ds, lat_ds):
     ax.set_title(variable03_long)
     # Colorbar and lables  
     cb = plt.colorbar(pc, shrink=0.5)  
+    #pc.set_cmap('jet') #colors: https://matplotlib.org/stable/tutorials/colors/colormaps.html
     plt.show()

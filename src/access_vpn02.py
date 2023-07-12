@@ -10,7 +10,7 @@ import pandas as pd
 datadir = Path.home() / "Downloads" # Path.home() makes the code work for different users   
 
 
-def read_vnp02(): 
+def read_vnp02(filename02): 
     # Open the dataset
     open_ds02 = xarray.open_dataset(datadir / filename02, group = "observation_data",) 
     list(open_ds02) 
